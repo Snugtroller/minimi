@@ -1,0 +1,11 @@
+{
+  "name": "search-first-chat-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A fast chat agent with one tool: web search.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  }
+}
