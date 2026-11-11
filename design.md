@@ -13,7 +13,7 @@ Browser UI
    v
 Node HTTP server
    |
-   +-- OpenAI-compatible chat completion
+   +-- Groq OpenAI-compatible chat completion
    |       |
    |       +-- web_search tool call
    |
@@ -38,8 +38,8 @@ One high-quality search tool keeps the agent predictable and quick. The model de
 ## Runtime
 
 1. Install Node.js 18 or newer.
-2. Set `OPENAI_API_KEY` for model-backed answers.
-3. Optionally set `OPENAI_MODEL`; it defaults to `gpt-4o-mini`.
+2. Set `GROQ_API_KEY` for model-backed answers.
+3. Optionally set `GROQ_MODEL`; it defaults to `llama-3.3-70b-versatile`.
 4. Run `npm start` and open `http://localhost:3000`.
 
 If no API key is present, the app uses the same web search provider and returns a transparent, source-linked result list. This makes the demo usable without silently pretending to be an LLM.
